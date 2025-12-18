@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyParchi - Secure Business Accounting</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#1B3C53',
+                            mid: '#234C6A',
+                            primary: '#2563eb',
+                            light: '#456882',
+                            pale: '#E3E3E3',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .hero-pattern {
+            background-color: #1B3C53;
+            background-image: radial-gradient(#234C6A 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+        .mockup-shadow { box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); }
+    </style>
+</head>
+<body class="bg-gray-50 text-slate-800">
+
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-brand-primary rounded-xl flex items-center justify-center text-white shadow-lg shadow-blue-500/30">
+                        <i class="fa-solid fa-receipt text-xl"></i>
+                    </div>
+                    <span class="text-2xl font-black text-brand-dark tracking-tight">MyParchi</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#features" class="text-sm font-semibold text-slate-500 hover:text-brand-primary transition">Features</a>
+                    <a href="#benefits" class="text-sm font-semibold text-slate-500 hover:text-brand-primary transition">Why Us</a>
+                    <a href="#pricing" class="text-sm font-semibold text-slate-500 hover:text-brand-primary transition">Pricing</a>
+                </div>
+                <a href="#download" class="bg-brand-dark hover:bg-slate-800 text-white px-6 py-2.5 rounded-full font-bold text-sm transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                    Get App
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden hero-pattern">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto">
+                <div class="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 mb-8 backdrop-blur-sm" data-aos="fade-down">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    <span class="text-xs font-bold text-blue-100 tracking-wide uppercase">v15.0 Now Available</span>
+                </div>
+                
+                <h1 class="text-5xl lg:text-7xl font-black text-white leading-tight mb-6 tracking-tight" data-aos="fade-up" data-aos-delay="100">
+                    Your Business.<br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">100% Offline.</span>
+                </h1>
+                
+                <p class="text-lg text-blue-100 mb-10 leading-relaxed max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                    Manage Sales, Purchases, and Cashbook without internet. Secure, private, and designed for thermal printing. The ultimate digital ledger for modern traders.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center" data-aos="fade-up" data-aos-delay="300">
+                    <a href="#download" class="bg-brand-primary hover:bg-blue-600 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-xl shadow-blue-600/30 flex items-center justify-center gap-3">
+                        <i class="fa-brands fa-android text-xl"></i> Download Now
+                    </a>
+                    <a href="#demo" class="bg-white/10 hover:bg-white/20 text-white border border-white/30 px-8 py-4 rounded-xl font-bold text-lg transition-all backdrop-blur-sm flex items-center justify-center gap-3">
+                        <i class="fa-regular fa-circle-play text-xl"></i> Watch Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+            <div class="absolute -top-[20%] -left-[10%] w-[50%] h-[50%] bg-blue-500/20 rounded-full blur-3xl"></div>
+            <div class="absolute top-[40%] -right-[10%] w-[40%] h-[40%] bg-emerald-500/10 rounded-full blur-3xl"></div>
+        </div>
+    </section>
+
+    <section class="relative -mt-16 z-20 mb-20">
+        <div class="max-w-5xl mx-auto px-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="bg-white rounded-3xl p-2 shadow-2xl border border-gray-200">
+                <div class="bg-slate-100 rounded-2xl overflow-hidden aspect-[16/9] flex items-center justify-center relative group">
+                    <div class="text-center p-10">
+                        <div class="w-20 h-20 bg-white rounded-2xl shadow-lg flex items-center justify-center mx-auto mb-4 text-brand-primary text-4xl">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-400">App Interface Preview</h3>
+                        <p class="text-slate-400 text-sm">Clean, Professional, Dark Blue Theme</p>
+                    </div>
+                    
+                    <div class="absolute bottom-6 right-6 bg-white px-4 py-2 rounded-lg shadow-lg flex items-center gap-2 text-sm font-bold text-slate-700 animate-bounce">
+                        <i class="fa-solid fa-print text-brand-primary"></i> Thermal Print Ready
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-brand-primary font-bold tracking-widest text-xs uppercase mb-2">Powerful Features</h2>
+                <h3 class="text-4xl font-black text-slate-900 mb-4">Everything You Need to Run Your Shop</h3>
+                <p class="text-slate-500 max-w-2xl mx-auto">No complex ERPs. Just simple, fast, and secure accounting tools built for daily use.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="p-8 rounded-3xl bg-slate-50 hover:bg-blue-50 transition-colors group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center shadow-sm text-2xl text-blue-600 mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-wifi"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">100% Offline</h4>
+                    <p class="text-slate-500 leading-relaxed">Works without internet. Your data is stored locally on your device using IndexedDB technology. Zero lag.</p>
+                </div>
+
+                <div class="p-8 rounded-3xl bg-slate-50 hover:bg-emerald-50 transition-colors group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center shadow-sm text-2xl text-emerald-600 mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-print"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Thermal Printing</h4>
+                    <p class="text-slate-500 leading-relaxed">Generate 58mm PDF receipts instantly. Compatible with all standard Bluetooth thermal printers.</p>
+                </div>
+
+                <div class="p-8 rounded-3xl bg-slate-50 hover:bg-purple-50 transition-colors group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center shadow-sm text-2xl text-purple-600 mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-fingerprint"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Device Lock Security</h4>
+                    <p class="text-slate-500 leading-relaxed">Advanced security locks the app to your specific device. No one else can copy or access your data.</p>
+                </div>
+
+                <div class="p-8 rounded-3xl bg-slate-50 hover:bg-orange-50 transition-colors group" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center shadow-sm text-2xl text-orange-600 mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-calculator"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Smart Ledgers</h4>
+                    <p class="text-slate-500 leading-relaxed">View detailed party histories. Filter by date range. See exactly who owes you money in seconds.</p>
+                </div>
+
+                <div class="p-8 rounded-3xl bg-slate-50 hover:bg-rose-50 transition-colors group" data-aos="fade-up" data-aos-delay="500">
+                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center shadow-sm text-2xl text-rose-600 mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Backup & Restore</h4>
+                    <p class="text-slate-500 leading-relaxed">One-click backup to your phone. Easily restore data if you switch devices. Full control.</p>
+                </div>
+
+                <div class="p-8 rounded-3xl bg-slate-50 hover:bg-cyan-50 transition-colors group" data-aos="fade-up" data-aos-delay="600">
+                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center shadow-sm text-2xl text-cyan-600 mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">White Labeling</h4>
+                    <p class="text-slate-500 leading-relaxed">Your Brand Name on top. The app adapts to show "Your Business Name" on all screens and receipts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-brand-dark text-white overflow-hidden relative">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-blue-500/20 rounded-full blur-[100px]"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-[100px]"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div data-aos="fade-right">
+                    <h2 class="text-brand-primary font-bold tracking-widest text-xs uppercase mb-2">Security First</h2>
+                    <h3 class="text-4xl font-black mb-6">Your Data, Locked to Your Device.</h3>
+                    <p class="text-slate-300 text-lg mb-8 leading-relaxed">
+                        MyParchi uses a proprietary <strong>Device Fingerprinting</strong> system. When you install the app, it generates a unique ID based on your hardware.
+                    </p>
+                    
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-4">
+                            <i class="fa-solid fa-check text-emerald-400 text-xl"></i>
+                            <span class="font-semibold">Requires Activation Key to start</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <i class="fa-solid fa-check text-emerald-400 text-xl"></i>
+                            <span class="font-semibold">Cannot be copied to another phone</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <i class="fa-solid fa-check text-emerald-400 text-xl"></i>
+                            <span class="font-semibold">Data encrypted in browser storage</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="relative" data-aos="fade-left">
+                    <div class="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/10 shadow-2xl">
+                        <div class="flex items-center gap-4 mb-6 border-b border-white/10 pb-4">
+                            <div class="w-12 h-12 bg-emerald-500 rounded-full flex items-center justify-center text-white text-xl">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">Activation Screen</h4>
+                                <p class="text-xs text-slate-300">What users see first</p>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="bg-black/20 p-4 rounded-xl">
+                                <p class="text-[10px] uppercase text-slate-400 font-bold">Device ID</p>
+                                <p class="font-mono text-xl tracking-widest">1712202588</p>
+                            </div>
+                            <div class="h-12 bg-white/5 rounded-xl border border-white/10 flex items-center px-4 text-slate-400 text-sm">
+                                Enter Activation Key...
+                            </div>
+                            <div class="h-12 bg-brand-primary rounded-xl flex items-center justify-center font-bold shadow-lg shadow-blue-500/40">
+                                UNLOCK APP
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="py-24 bg-white text-center">
+        <div class="max-w-4xl mx-auto px-4" data-aos="zoom-in">
+            <h2 class="text-4xl lg:text-5xl font-black text-slate-900 mb-6">Ready to Digitalize Your Khata?</h2>
+            <p class="text-xl text-slate-500 mb-10">Join thousands of smart business owners using MyParchi.</p>
+            
+            <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 inline-block text-left w-full max-w-md shadow-lg">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="font-bold text-slate-900 flex items-center gap-2">
+                        <i class="fa-solid fa-file-code text-blue-600"></i> MyParchi_Pro.html
+                    </h3>
+                    <span class="text-xs font-bold bg-green-100 text-green-700 px-2 py-1 rounded">v15.0 Stable</span>
+                </div>
+                <p class="text-xs text-slate-400 mb-6">Size: 48KB • Works on Chrome/Edge • No Installation</p>
+                <button class="w-full bg-slate-900 text-white py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-blue-600 transition-colors">
+                    <i class="fa-solid fa-download"></i> Download App File
+                </button>
+                <p class="text-[10px] text-center text-slate-400 mt-4">
+                    *After downloading, simply open the file in Google Chrome.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-50 border-t border-slate-200 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-receipt text-slate-400"></i>
+                <span class="font-bold text-slate-700">MyParchi</span>
+            </div>
+            <div class="text-sm text-slate-400">
+                &copy; 2025 MyParchi Inc. All rights reserved.
+            </div>
+            <div class="flex gap-4">
+                <a href="#" class="text-slate-400 hover:text-blue-600"><i class="fa-brands fa-twitter text-xl"></i></a>
+                <a href="#" class="text-slate-400 hover:text-blue-600"><i class="fa-brands fa-instagram text-xl"></i></a>
+                <a href="#" class="text-slate-400 hover:text-blue-600"><i class="fa-brands fa-whatsapp text-xl"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+    </script>
+</body>
+</html>

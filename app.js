@@ -725,8 +725,18 @@ async function attemptActivation(deviceId) {
         );
         expiryDate.setHours(23, 59, 59, 999);
         
+
         // Activate with expiry timestamp
         _0xSec.activateLicense(bizName, expiryDate.getTime());
+       // Activate with expiry timestamp (await since it's async now)
+        const activated = await _0xSec.activateLicense(bizName, expiryDate.getTime());
+        
+        if (!activated) {
+            errorEl.innerHTML = '<i class="fa-solid fa-circle-exclamation mr-1"></i> Activation failed. Please try again.';
+            errorEl.classList.remove('hidden');
+            return;
+        }
+ 
         
         // Show success with expiry info
         const daysRemaining = validation.daysRemaining;
